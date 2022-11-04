@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="string12">
+    <p id="result1"></p>
+    <button id="onc" onclick="string1()"> click</button>
+    <script>
+        a=0
+        function string1(){
+        a=document.getElementById("string12").value
+        console.log(a)
+        b=a.split('')
+        c=b.reverse()
+        d=c.join('')
+        // document.getElementById("result1").innerHTML=d
+        if(a==d){
+            document.getElementById("result1").innerHTML="it is palidrom"
+
+        }
+        else{
+        document.getElementById("result1").innerHTML="it is not palindrom"
+        }
+        }
+       
+
+        
+            </script>
+    
+</body>
+</html>
